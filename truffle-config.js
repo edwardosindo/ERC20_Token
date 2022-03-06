@@ -46,6 +46,12 @@ module.exports = {
      port: 8545,            // Standard Ethereum port (default: none)
      network_id: "*",       // Any network (default: none)
     },
+    ganache: { // Ganache local test RPC blockchain
+      network_id: "5777",
+      host: "localhost",
+      port: 7545,
+      gas: 6721975,
+    }
     // Another network with more advanced options...
     // advanced: {
     // port: 8777,             // Custom port
@@ -92,6 +98,7 @@ module.exports = {
       // }
     }
   },
+  
 
   // Truffle DB is currently disabled by default; to enable it, change enabled:
   // false to enabled: true. The default storage location can also be
